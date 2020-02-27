@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head >
+    <title> Supermercado</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="">
+
+
+    <script>
+        function calc() {
+
+            ;
+         
+            var nescau = document.getElementById("nescau");
+            var latas = document.getElementById("latas");
+
+            var leite = document.getElementById("leite");
+            var litro = document.getElementById("litro");
+
+            var banana = document.getElementById("banana");      
+            var kilo = document.getElementById("kilo");
+
+           // var calc= nescau.value * latas.value;
+           // alert(calc);
+
+
+
+            if (nescau.value>0 && latas.value>0){
+               var calc1= nescau.value * latas.value;
+            
+
+                alert("Voce comprou"+nescau.value+"de Nescau");
+                alert("O valor das latas foram:"+calc1+"R$");
+                
+            }
+            else{
+                alert("Preencha os Dados do nescau")
+            }
+            if (leite.value>0 && litro.value>0) {
+               var calc2= leite.value * litro.value;
+               alert(calc2);
+
+                alert("Voce comprou"+leite.value+"de Leite");
+                alert("O valor dos litros foram:"+calc2+"R$");
+            }
+            else{
+                alert("Preencha os dados do Leite")
+            }
+           if (banana.value>01 && kilo.value>0) {
+            var calc3= banana.value * kilo.value;
+               alert(calc3);
+                alert("Voce comprou"+banana.value+"de Banana");
+                alert("O valor dos kilos foram:"+calc3+"R$");
+            }
+
+            else{
+                alert("Preencha od dados da Banana");
+            }
+
+            var total = calc1+calc2+calc3;
+            
+                alert("O VALOR TOTAL  DE SUA COMPRA FOI:" + total +" R$");
+            
+
+            
+
+            
+        }
+
+        
+
+    </script>
+</head>
+
+<body id="fundo">
+
+    <P>
+        <label>
+            <h1>nescau</h1>
+            
+        </label>
+        <p><img src="nescau.jpg"></p>
+        <h2>Digite o Numero de Latas de Nescau </h2>
+        <input font-size: 14px; display: flex; width: 400px; type="text" name="nescau" id="nescau" class="cor"value="" />
+        <br>
+        <h2>Digite o preço do Nescau</h2>
+        <input font-size: 14px; display: flex; width: 400px; type="text" name="nescau" id="latas" class="cor"
+            value="" />
+
+
+    </P>
+    <hr>
+    <p>
+        <label>
+            <h1>Leite</h1>
+            
+        </label>
+        <p><img src="leite.jpg"></p>
+        <h2>Digite a quantidade de litros de leite</h2>
+        <input type="value" name="leite" id="leite" class="cor" value="" />
+        <br>
+        <h2>Digite o preço do leite</h2>
+        <input type="value" name="leite" id="litro" class="cor" value="" />
+    </p>
+    </p>
+    <hr>
+    <p>
+        <label>
+            <h1>Banana</h1>
+            
+        </label>
+
+        <p><img src="banana.jpg"></p>
+        <h2>Digite a Quantidade de kilos de Banana</h2>
+        <input type="value" name="banana" id="banana" class="cor" value="" />
+        <br>
+        <h2>Digite o preço do kilo da Banana</h2>
+        <input type="value" name="leite" id="kilo" class="cor" value="" />
+    </p>
+
+    </p>
+    <hr>
+    <p>
+        <button onclick="calc()">Calcular Total</button>
+    </p>
+
+</body>
+
+</html>
